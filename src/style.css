@@ -2,7 +2,7 @@ html {
     background-color: rgb(204, 225, 231);
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
     margin: 20px auto;
     padding: 10px;
@@ -11,6 +11,28 @@ h1, h2 {
 a {
     color: black;
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.top-ingredients {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid yellow;
+    border-radius: 5px;
 }
 
 footer {
