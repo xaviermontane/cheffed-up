@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Cheffed Up is a recipe finder that helps you find recipes based on the ingredients you have in your fridge.">
     <link rel="stylesheet" href="style.css">
     <title>Cheffed Up — Recipe Finder</title>
-</head>
     <script src="main.js"></script>
+</head>
 <body>
     <header>
         <a href="#"><h1>CHEFFED UP</h1></a>
@@ -18,15 +19,43 @@
         <hr>
     </header>
     <main>
-        <h2>What's In Your Fridge?</h2>
+        <h2 style="width: 100%; text-align: center">What's In Your Fridge?</h2>
         <div id="form-wrapper">
             <input type="text" id="search" placeholder="Search for ingredients...">
         </div>
-        <div id="results">
-            <h3>Current Items</h3>
-            <h3>Featured Recipes</h3>
-        </div>
     </main>
+    <div id="results" style="font-size: 20px">
+        <h3>Current Items</h3>
+        <h3>Featured Recipes</h3>
+    </div>
+    <aside>
+        <h3 id="top-ingredients"> Popular Ingredients</h3>
+        <ul id="checkbox-list">
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="chicken">
+                    Chicken
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="beef">
+                    Beef
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="pasta">
+                    Pasta
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="rice">
+                    Rice
+                </label>
+            </li>
+    </aside>
     <footer>
         <p>&copy; 2020 Cheffed Up</p>
     </footer>
