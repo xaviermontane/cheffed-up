@@ -19,26 +19,42 @@
         <hr>
     </header>
     <main>
-        <h2>What's In Your Fridge?</h2>
+        <h2 style="width: 100%; text-align: center">What's In Your Fridge?</h2>
         <div id="form-wrapper">
             <input type="text" id="search" placeholder="Search for ingredients...">
         </div>
-        <div id="results">
-            <h3>Current Items</h3>
-            <h3>Featured Recipes</h3>
-        </div>
     </main>
+    <div id="results" style="font-size: 20px">
+        <h3>Current Items</h3>
+        <h3>Featured Recipes</h3>
+    </div>
     <aside>
-        <h3 class="top-ingredients"> Popular Ingredients ?</h3>
-        <ul>
-            <li><a href="#">Chicken</a></li>
-            <li><a href="#">Beef</a></li>
-            <li><a href="#">Pasta</a></li>
-            <li><a href="#">Rice</a></li>
-            <li><a href="#">Vegetables</a></li>
-            <li><a href="#">Fruits</a></li>
-            <li><a href="#">Dairy</a></li>
-            <li><a href="#">Spices</a></li>
+        <h3 id="top-ingredients"> Popular Ingredients</h3>
+        <ul id="checkbox-list">
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="chicken">
+                    Chicken
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="beef">
+                    Beef
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="pasta">
+                    Pasta
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="ingredient" value="rice">
+                    Rice
+                </label>
+            </li>
     </aside>
     <footer>
         <p>&copy; 2020 Cheffed Up</p>
