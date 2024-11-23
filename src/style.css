@@ -8,6 +8,9 @@ a {
 }
 
 aside {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     background-color: #D6CCC2;
     padding: 10px;
     margin: 30px;
@@ -57,26 +60,28 @@ footer {
 }
 
 .filter-wrapper {
-    display: inline-grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
 .filter-header {
+    text-align: center;
     background-color: #e4dad2;
     padding: 10px;
     margin: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    width: 50%;
+    width: 70%;
 }
 
 .checkbox-list {
     margin-left: 10px;
     background-color: #e4dad2;
     padding: 0 10px;
-    width: 50%;
+    width: 70%;
     border: 1px solid black;
     border-radius: 5px;
 }
