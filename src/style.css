@@ -60,7 +60,7 @@ footer {
     display: inline-block;
 }
 
-#form-wrapper {
+#form-wp {
     display: flex;
     justify-content: center;
 }
@@ -83,14 +83,28 @@ footer {
     margin: 10px 0;
 }
 
-#results {
-    margin-bottom: 20px;
-    padding: 20px;
+#result {
+    margin-top: 12px;
     display: flex;
     justify-content: space-around;
 }
 
-.filter-wrapper {
+#result-out-wp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.result-out{
+    opacity: 0;
+    background-color: transparent;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    width: 20%;
+}
+
+.filter-wp {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,7 +142,7 @@ footer {
     margin-right: 5px;
 }
 
-#control-wrapper {
+#control-wp {
     display: flex;
     justify-content: center;
 }

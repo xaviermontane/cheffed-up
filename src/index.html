@@ -20,17 +20,21 @@
     <main>
         <hr>
         <h2 style="text-align: center; margin: 40px 0 12px">What's In Your Fridge?</h2>
-        <div id="form-wrapper">
+        <div id="form-wp">
             <input type="text" id="search" placeholder="Type your ingredients...">
             <button id="search-btn">Search</button>
         </div>
     </main>
-    <div id="results" style="font-size: 20px">
+    <div id="result" style="font-size: 20px">
         <h3>Current Items</h3>
         <h3>Featured Recipes</h3>
     </div>
+    <div id="result-out-wp">
+        <span class="result-out"></span>
+        <span class="result-out"></span>
+    </div>
     <aside>
-        <div class="filter-wrapper">
+        <div class="filter-wp">
             <h3 class="filter-header">Popular Ingredients</h3>
             <ul class="checkbox-list">
                 <li>
@@ -58,7 +62,7 @@
                     </label>
                 </li>
         </div>
-        <div class="filter-wrapper">
+        <div class="filter-wp">
             <h3 class="filter-header">Dietary Restrictions</h3>
             <ul class="checkbox-list">
                 <li>
@@ -86,7 +90,7 @@
                     </label>
                 </li>
         </div>
-        <div id="control-wrapper">
+        <div id="control-wp">
             <button class="control-btn">Clear</button>
             <button class="control-btn">Random</button>
             <button class="control-btn">Apply</button>
