@@ -1,6 +1,6 @@
 html {
     background-color: #EDEDE9;
-    font-family: "Poppins", sans-serif;
+    font: 1em "Trebuchet MS", sans-serif;
 }
 
 a {
@@ -84,6 +84,7 @@ footer {
 }
 
 #result {
+    font-size: 20px;
     margin-top: 12px;
     display: flex;
     justify-content: space-around;
@@ -95,12 +96,26 @@ footer {
 }
 
 .result-out {
+    display: inline;
     opacity: 0;
-    background-color: transparent;
-    padding: 30px;
-    border: 1px solid black;
+    background-color: #cfccc4;
+    line-height: 1.4em;
+    padding: 20px;
     border-radius: 5px;
     width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.horizontal-list { 
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.horizontal-list li {
+    margin-right: 10px;
 }
 
 .filter-wp {
