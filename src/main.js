@@ -7,10 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
     
     searchButton.addEventListener("click", () => {
         ingredients.push(searchBar.value);
-        if (ingredientsList.length > 0) {
-            resultOut[0].style.opacity = 1;
-            ingredientsList[0].textContent = ingredients.map(ingredient => ingredient.charAt(0).toUpperCase() + ingredient.slice(1)).join(", \n");
-        }
+        resultOut[0].style.opacity = 1;
         searchBar.value = "";
+        displayElements();
     });
+
+    function displayElements() {
+        ingredientsList[0].innerHTML = "";
+        ingredientsList[0].classList.add("horizontal-list");
+        ingredients.forEach(ingredient => {
+            const li = document.createElement("li");
+            li.textContent = ingredient.charAt(0).toUpperCase() + ingredient.slice(1);
+            ingredientsList[0].appendChild(li);
+        });
+    };
 });
