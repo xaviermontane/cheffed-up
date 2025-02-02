@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const popularIngredients = Array.from(document.getElementsByName("popular-ingredient"));
     const ingredientsList = document.getElementsByClassName("ingredients-list");
     const resultOut = document.getElementsByClassName("result-out");
+    const controlButton = document.getElementsByClassName("control-btn");
     let ingredients = [];
     
     searchButton.addEventListener("click", () => {
@@ -16,6 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
         ingredient.addEventListener("click", (e) => {
             const value = e.target.value;
             e.target.checked ? ingredients.push(value) : ingredients = ingredients.filter(ingredient => ingredient !== value);
+            displayElements();
+        });
+    });
+
+    Array.from(controlButton).forEach(button => {
+        button.addEventListener("click", (e) => {
+            if (e.target.textContent == "Clear") {
+                ingredients = [];
+                popularIngredients.forEach(ingredient => {
+                    ingredient.checked = false;
+                });
+            } if (e.target.textContent == "Random") {
+                pass;
+            }
             displayElements();
         });
     });
