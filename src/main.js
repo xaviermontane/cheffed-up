@@ -1,20 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
     const searchBar = document.getElementById("search");
     const searchButton = document.getElementById("search-btn");
+    const popularIngredients = Array.from(document.getElementsByName("popular-ingredient"));
     const ingredientsList = document.getElementsByClassName("ingredients-list");
     const resultOut = document.getElementsByClassName("result-out");
     let ingredients = [];
     
     searchButton.addEventListener("click", () => {
         ingredients.push(searchBar.value);
-        resultOut[0].style.opacity = 1;
         searchBar.value = "";
         displayElements();
+    });
+
+    popularIngredients.forEach(ingredient => {
+        ingredient.addEventListener("click", (e) => {
+            const value = e.target.value;
+            e.target.checked ? ingredients.push(value) : ingredients = ingredients.filter(ingredient => ingredient !== value);
+            displayElements();
+        });
     });
 
     function displayElements() {
         ingredientsList[0].innerHTML = "";
         ingredientsList[0].classList.add("horizontal-list");
+        resultOut[0].style.opacity = ingredients.length > 0 ? 1 : 0;
         ingredients.forEach(ingredient => {
             const li = document.createElement("li");
             li.textContent = ingredient.charAt(0).toUpperCase() + ingredient.slice(1);
