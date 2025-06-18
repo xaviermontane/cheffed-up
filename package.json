@@ -21,5 +21,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
   }
 }
