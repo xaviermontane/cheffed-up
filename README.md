@@ -1,5 +1,22 @@
+![CI](https://github.com/xaviermontane/cheffed-up/actions/workflows/ci.yml/badge.svg)
+![Dockerized](https://img.shields.io/badge/docker-ready-blue)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # Cheffed Up
-Welcome to the _Cheffed Up_ project! This website allows users to input the items they have in their pantry or fridge and receive recipe suggestions. The goal is to help users minimize food waste and get creative in the kitchen!
+Welcome to the Cheffed Up project! This website allows users to input the items they have in their pantry or fridge and receive recipe suggestions. The goal is to help users minimize food waste and get creative in the kitchen!
+
+---
+
+## 🛠️ Docker Integration
+To streamline development and ensure consistency across environments, Docker has been integrated into the project. This allows for easy setup and execution of the application in isolated containers.
+
+### 🧪 Development Environment
+For local development, you can use Docker to run the application:
+
+1. **Build the Docker image:**
+
+   ```bash
+   docker build -t cheffed-up .
 
 ## Table of Contents
 - Features
@@ -12,7 +29,8 @@ Welcome to the _Cheffed Up_ project! This website allows users to input the item
 Input field for users to enter their current pantry/fridge items.
 Dynamic recipe suggestions based on user input.
 User-friendly interface for easy navigation.
-Getting Started
+
+## Getting Started
 To run this project locally, follow these steps:
 
 1. Clone the repository:
