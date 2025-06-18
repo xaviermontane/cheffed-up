@@ -1,0 +1,11 @@
+# Ignore version control system files
+.git
+.gitignore
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+
+# Optional: Ignore OS/system files
+.DS_Store
+Thumbs.db
