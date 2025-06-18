@@ -1,0 +1,25 @@
+{
+  "name": "cheffed-up",
+  "version": "1.0.0",
+  "description": "A web application that will query for recipe suggestions according to your current pantry items.",
+  "keywords": [
+    "wip",
+    "web",
+    "diet"
+  ],
+  "homepage": "https://github.com/xaviermontane/cheffed-up#readme",
+  "bugs": {
+    "url": "https://github.com/xaviermontane/cheffed-up/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaviermontane/cheffed-up.git"
+  },
+  "license": "GPL-3.0",
+  "author": "F0RTY",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
