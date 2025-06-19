@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes – Cheffed-up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cheffed Up is a recipe finder that helps you find recipes based on the ingredients you have in your fridge.">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Recipe List</h1>
+    <div id="recipe-filter">
+        <h2>Filter Recipes</h2>
+        <label for="search">Search by type:</label>
+        <input type="text" id="search" placeholder="Type an ingredient...">
+        <button id="search-btn">Search</button>
+        <h3>Popular Types</h3>
+        <ul class="checkbox-list">
+            <li>
+                <label>
+                    <input type="checkbox" name="popular-ingredient" value="chicken"> Fruit
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="popular-ingredient" value="beef"> Protein
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="popular-ingredient" value="pasta"> Dairy
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="popular-ingredient" value="vegetables"> Vegetables
+                </label>
+            </li>
+    </div>
+</body>
+</html>
